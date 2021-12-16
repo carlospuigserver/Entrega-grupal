@@ -28,5 +28,5 @@ def simpleArraySum(ar):
 
 result = simpleArraySum(ar)
 fptr.write(str(result) + '\n')
-fptr.close()
+
 
