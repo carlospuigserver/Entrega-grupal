@@ -22,3 +22,6 @@ def main():
     result = aVeryBigSum(ar)
     fptr.write(str(result) + '\n')
     fptr.close()
+
+if __name__=='__main__':
+    main()

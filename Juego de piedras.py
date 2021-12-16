@@ -6,4 +6,4 @@ def  gameOfStones ( n ): #
     elif  2 <= n <= 6 : 
         return  "First"  
     elif  n  ==  7  or  n  ==  8 : 
-        return  "econd"
+        return  "econd"                                   
