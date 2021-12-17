@@ -12,11 +12,11 @@ def staircase(dimension):
 
         # Pasar a la linea siguiente
         print()
-
-
+        
     print()
 
-
 def pedir_dimension():
+    dimension = int(input("Insertar dimension: "))
+    return dimension
 
-
+dimension = pedir_dimension()
