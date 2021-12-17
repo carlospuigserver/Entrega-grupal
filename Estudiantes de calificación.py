@@ -5,14 +5,22 @@ import re
 import sys
 
 def gradingStudents(grades):
-    res=[]
-    for grade in grades:
-        if grade>=38:
-            mod5= grade % 5
-            if mod5>=3:
-                grade+=(5-mod5)
-        res.append(grade)
-    return res
+    results=[]
+    for nota in grades:
+        if nota<40:
+            print(nota)
+            results.append(nota)
+        else:
+            resto= nota%5
+            num_base=nota-resto
+            if (nota%5)>=3:
+                num_redondeado=num_base+5
+                results.append(num_redondeado)
+            else:
+                results.append(num_base)
+                
+    return results
+    
 
 if __name__ == '__main__':
     os.environ['OUTPUT_PATH']='Solution.txt'
