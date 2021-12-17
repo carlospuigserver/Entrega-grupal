@@ -24,3 +24,8 @@ def pedir_dimension():
 #INICIO PROGRAMA
 ###
 dimension=pedir_dimension()
+
+if dimension>0:
+    staircase(dimension)
+else:
+    print("Introduzca un numero valido: ")
