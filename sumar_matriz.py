@@ -11,6 +11,7 @@ def simpleArraySum(ar):
     return suma
 
 n=int(input("Intrduzca una lista de dimension de la matriz: "))
+print("Introduzca una lista de numeros", end="")
 ar=list(map(int,input().rstrip().split()))
 print(ar)
 result=simpleArraySum(ar)
