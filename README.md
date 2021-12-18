@@ -1,10 +1,10 @@
 # Entrega-grupal
 
-Ejercicio suma simple de una matriz:
+Ejercicio "Suma simple de una matriz":
 
 La dirección GitHub de este repositorio es: https://github.com/carlospuigserver/Entrega-grupal.git
 
-Para este código, ha sido fundamental ser capaces de crear una lista, y lo más importante, sumar los elementos de la lista y a partir de esta conseguir un número entero.
+Para este código, ha sido fundamental ser capaces de crear una lista, y lo más importante, sumar sus elementos y a partir de esta operación conseguir un número entero.
 
 El código que hemos empleado para resolver el programa es el siguienta:
 ```
@@ -26,3 +26,66 @@ ar=list(map(int,input().rstrip().split()))
 print(ar)
 result=simpleArraySum(ar)
 print("La suma vale", result)
+
+
+
+
+
+Ejercicio "Compara los problemas":
+
+La dirección GitHub de este repositorio es : https://github.com/carlospuigserver/Entrega-grupal.git
+
+Para realizar este código, hemos creado unos ciertos apartados los cuales tienen una calificación aleatoria(0-10) para dos personas, y a partir de los if, hemos sido capaces de ir comparando las notas de los diferentes apartados de ambos, y finalmente declarar quien ha conseguido más puntos.
+
+El código que hemos empleado para llevar a cabo este programa es el siguiente:
+```
+from math import atan2
+from random import randint
+
+l1=randint(0,10)
+l2=randint(0,10)
+l3=randint(0,10)
+c1=randint(0,10)
+c2=randint(0,10)
+c3=randint(0,10)
+
+print("Los puntos de Lucía son:")
+print("\nClaridad del problema={}".format(l1))
+print("\nOriginalidad={}".format(l2))
+print("\nDificultad={}".format(l3))
+
+print("Los puntos de Carlos son:")
+print("\nClaridad del problema={}".format(c1))
+print("\nOriginalidad={}".format(c2))
+print("\nDificultad={}".format(c3))
+
+def compareTiplets ():
+    puntosL=0
+    puntosC=0
+
+    if l1<c1:
+        puntosC+=1
+    elif l1>c1:
+        puntosL+=1
+    else:
+        pass
+    if l2<c2:
+        puntosC+=1
+    elif l2>c2:
+        puntosL+=1
+    else:
+        pass
+    if l3<c3:
+        puntosC+=1
+    elif l3>c3:
+        puntosL+=1
+    else:
+        pass
+    
+    print("Los puntos totales de Lucía son:",l1+l2+l3)
+    print("Los puntos totales de Carlos son:",c1+c2+c3)
+    return
+if l1+l2+l3>c1+c2+c3:
+    print("Por tanto la ganadora es Lucía")
+else:
+    print("Por tanto el ganador es Carlos")
