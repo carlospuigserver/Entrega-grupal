@@ -156,3 +156,22 @@ def staircase(dimension):
 
 def pedir_dimension():
 ```
+
+
+
+Ejercicio "Juego de piedras":
+
+La dirección GitHub de este repositorio es: https://github.com/carlospuigserver/Entrega-grupal.git
+Para la realización de este código ha sido fundamental la realizacion de un bucle. Cada jugador juega con un numero inicial de piedras, juegan de manera alterna 
+y hay unas reglas especificas.
+
+Código:
+for i in range(0,int(input())):
+    stones=int(input())
+    if stones%7<2:
+        print("Second") 
+    else:
+        print("First")   
+        
+        
+      
