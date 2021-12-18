@@ -17,3 +17,30 @@ print("Los puntos de Carlos son:")
 print("\nClaridad del problema={}".format(c1))
 print("\nOriginalidad={}".format(c2))
 print("\nDificultad={}".format(c3))
+
+def compareTiplets ():
+    puntosL=0
+    puntosC=0
+
+    if l1<c1:
+        puntosC+=1
+    elif l1>c1:
+        puntosL+=1
+    else:
+        pass
+    if l2<c2:
+        puntosC+=1
+    elif l2>c2:
+        puntosL+=1
+    else:
+        pass
+    if l3<c3:
+        puntosC+=1
+    elif l3>c3:
+        puntosL+=1
+    else:
+        pass
+    
+    print("Los puntos totales de Lucía son:",l1+l2+l3)
+    print("Los puntos totales de Carlos son:",c1+c2+c3)
+
