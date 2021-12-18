@@ -43,4 +43,12 @@ def compareTiplets ():
     
     print("Los puntos totales de Lucía son:",l1+l2+l3)
     print("Los puntos totales de Carlos son:",c1+c2+c3)
+    return
+if l1+l2+l3>c1+c2+c3:
+    print("Por tanto la ganadora es Lucía")
+else:
+    print("Por tanto el ganador es Carlos")
+
+
+
 
