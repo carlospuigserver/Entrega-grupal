@@ -162,6 +162,7 @@ def pedir_dimension():
 Ejercicio "Juego de piedras":
 
 La dirección GitHub de este repositorio es: https://github.com/carlospuigserver/Entrega-grupal.git
+
 Para la realización de este código ha sido fundamental la realizacion de un bucle. Cada jugador juega con un numero inicial de piedras, juegan de manera alterna 
 y hay unas reglas especificas.
 
@@ -175,6 +176,59 @@ for i in range(0,int(input())):
     else:
         print("First")   
         
-        
+ ```
 
+Ejercicio "Estudiantes de calificacion":
+
+La dirección GitHub de este repositorio es: https://github.com/carlospuigserver/Entrega-grupal.git
+
+Hemos realizado un programa para redondear las notas de la universidad, es clave entender que para poder redondearlo hay que llegar al número base(es el múltiplo de cinco más cercano pero MENOR) y a partir de ahí o se le añadirá el múltiplo de cinco más cercano pero MAYOR,el valor que se añadirá a la lista de resultados es el numero_base + 5 o se añadirá el numero base.  No todos los numeros se redondean, solo los mayores de 40 que estaran suspendidos.
+
+
+Código:
+```
+import math
+import os
+import random
+import re
+import sys
+
+def gradingStudents(grades):
+    results=[]
+    for nota in grades:
+        if nota<40:
+            print(nota)
+            results.append(nota)
+        else:
+            resto= nota%5
+            num_base=nota-resto
+            if (nota%5)>=3:
+                num_redondeado=num_base+5
+                results.append(num_redondeado)
+            else:
+                results.append(num_base)
+                
+    return results
+    
+
+
+   
+
+grades_count = int(input("Numero de estudiantes? ").strip())
+grades = []
+
+ 
+ 
+ 
+for _ in range(grades_count):
+    grades_item = int(input("Nota ").strip())
+    grades.append(grades_item)
+
+print(grades)
+print()
+
+result = gradingStudents(grades)
+print(result)
+
+```
       
