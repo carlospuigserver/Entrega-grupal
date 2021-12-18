@@ -123,3 +123,36 @@ result=aVeryBigSum(ar)
 print("La suma tiene un valor de",result)
 ```
 
+
+
+Ejercicio "La Escalera":
+
+La dirección GitHub de este repositorio es: https://github.com/carlospuigserver/Entrega-grupal.git
+
+Para llevar a cabo este programa, hemos tenido que crear una escalera de un cierto tamaño(número entero), dibujada con símbolos y espacios, y la altura y la base de esta tiene que ser igual al tamaño que hayamos seleccionado. Para realizarla nos hemos guiado de dos bucles for, uno que tenga en cuenta las dimensiones de la escalera, y otro que tenga en cuenta los espacios.
+
+
+El código que hemos empleado para realizar el programa es el siguiente:
+
+```
+def staircase(dimension):
+    for  fila_actual in range(1, dimension+1):
+        num_espacios = dimension - (fila_actual)
+
+        # Imprime espacios inicales
+        for e in range(0, int((num_espacios)/2)):
+            print(" ", end="")
+
+        # Imprime hashtag
+        for e in range(0, dimension-num_espacios):
+            print("#", end="")
+
+        # Pasar a la linea siguiente
+        print()
+
+
+    print()
+
+
+def pedir_dimension():
+```
