@@ -90,3 +90,36 @@ if l1+l2+l3>c1+c2+c3:
     print("Por tanto la ganadora es Lucía")
 else:
     print("Por tanto el ganador es Carlos")
+```
+
+
+
+Ejercicio "Una suma muy grande":
+
+La dirección GitHub de este repositorio es: https: https://github.com/carlospuigserver/Entrega-grupal.git
+
+Para realizar este código, hemos empleado la misma estructura que en el primer ejercico, la clave ha sido crear una lista, y haber sido capaces de realizar una suma de los elementos de esta y que nos devuelva un número entero, pero en este ejercicio, a diferencia del primero, hay que tener en cuenta que algunos de los elementos de la lista pueden ser números muy grandes.
+
+El código que hemos llevado a cabo para realizar el programa es el siguiente:
+
+```import math
+import os
+import random
+import re
+import sys
+
+
+def aVeryBigSum(ar):
+    suma=0
+    for number in ar:
+        suma=suma+number
+        return suma
+
+n=int(input("Introduce una lista de las dimensiones de la matriz"))
+print("Introduzca una lista de numeros", end="")
+ar = list(map(int, input().rstrip().split()))
+print(ar)
+result=aVeryBigSum(ar)
+print("La suma tiene un valor de",result)
+```
+
