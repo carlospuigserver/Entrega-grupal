@@ -9,7 +9,7 @@ def aVeryBigSum(ar):
     suma=0
     for number in ar:
         suma=suma+number
-        return suma
+    return suma
 
 n=int(input("Introduce una lista de las dimensiones de la matriz"))
 print("Introduzca una lista de numeros", end="")

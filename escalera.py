@@ -1,3 +1,6 @@
+####
+# FUNCIONES
+####
 def staircase(dimension):
     for  fila_actual in range(1, dimension+1):
         num_espacios = dimension - (fila_actual)
@@ -12,11 +15,17 @@ def staircase(dimension):
 
         # Pasar a la linea siguiente
         print()
-        
+
     print()
 
 def pedir_dimension():
     dimension = int(input("Insertar dimension: "))
     return dimension
-
+####
+# INCIO PROGRAMA
+####
 dimension = pedir_dimension()
+if dimension > 0:
+    staircase(dimension)
+else:
+    print("Introduzca un numero valido: ")
